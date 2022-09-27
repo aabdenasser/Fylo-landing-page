@@ -1,0 +1,313 @@
+/* Start Global Rulse */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Open+Sans&family=Raleway:wght@400;700&family=Work+Sans:wght@200;300;400;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    z-index: 100;
+}
+/* Mobile */
+@media (max-width:862px) {
+    .container{
+        min-width: 100%;
+        text-align: center;
+    }
+    .illustration-1{
+        order: 1;
+    }
+    .row-one{
+        order: 2;
+    }
+    .illustration-2{
+        order: 3;
+        margin: auto;
+    }
+    .row-tow{
+        order: 4;
+        margin: auto;
+    }
+    div.container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    div.card,
+    div.link{
+        margin: 0 auto 1rem  ;
+    }
+    div.container div,
+    div.container form {
+        min-width: 100%;
+    }
+    form{
+        justify-content: center;
+    }
+    form input{
+        min-width: 60%;
+    }
+    footer div.container img{
+        width: 200px;
+        max-width: 100%;
+    }
+    footer section.container {
+        display: block;
+        text-align: left;
+    }
+    .information, 
+    .about-us{
+        margin-bottom: 2rem;
+    }
+    
+
+}
+/* Desktop */
+@media (max-width:1440px) {
+    
+}
+
+/* End Global Rulse */
+
+/* Start Header */
+.header{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.header img{
+    min-width: clamp(13px , 4vw , 17px);
+    max-width: 200px;
+}
+ul{
+    list-style: none;
+    min-width: 220px;
+}
+ul li{
+    display: inline;
+    margin-left: 1rem;
+    font-size: clamp(13px , 4vw , 17px);
+}
+/* End Header */
+
+/* Start Main  */
+
+/* Start Row-One */
+main.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(375px , 1fr));
+    align-items: center;
+    gap: 4rem 0;
+    margin-bottom: 4rem;
+    z-index: 1;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(243, 87%, 12%);
+}
+.description-one{
+    font-weight: 484px;
+    margin-bottom: 1rem;
+    color: hsl(243, 87%, 12%);
+}
+picture img{
+    width: 534px;
+    max-width: 100%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+form [type = email]{
+    height: 2.5rem;
+    width: 50%;
+    outline: none;
+    padding-left: 0.5rem;
+    border-color: hsl(0, 0%, 75%);
+}
+form [type = submit]{
+    height: 2.5rem;
+    width: 30%;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+form [type = submit]:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/* End Row-One */
+
+/* Start Row-Tow */
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(243, 87%, 12%);
+}
+.description-tow{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: hsl(243, 87%, 12%);
+}
+.link{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    width: fit-content;
+    height: 25px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.link:hover{
+    opacity: 0.7;
+}
+a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    font-size: 16px;
+}
+.card{
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    box-shadow: 0 0 10px 1px hsl(0, 0%, 75%) ;
+    max-width: 400px;
+    text-align: left;
+}
+.card :first-child{
+    width: 20px;
+}
+.description-three{
+    line-height: 1.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.card .avatar{
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.card > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.5rem;
+}
+.card .name{
+    font-size: 15px;
+    width: fit-content;
+    font-weight: bolder;
+    color: hsl(243, 87%, 12%);
+}
+.job{
+    font-size: 12px;
+    color: hsl(243, 87%, 12%);
+}
+.illustration-2{  
+    width: 534px;
+    max-width: 100%;
+}
+/* End Row-Tow */
+/* Start Row-Three */
+body > section{
+    background-color: hsl(238, 22%, 44%);
+}
+div.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+div.container div ,
+div.container form{
+    width: calc(90% / 2);
+}
+div.container form [type = email]{
+    width: 90%;
+    margin-bottom: 1rem;
+}
+div.container form [type = submit]{
+    width: fit-content;
+    padding: 1rem;
+    font-weight: 400;
+}
+/* End Row-Three */ 
+
+/* End Main  */ 
+
+/* Start Footer */
+footer{
+    padding: 4rem 3rem ;
+}
+footer,
+section.container{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+footer div.container{
+    background-color: hsl(243, 87%, 12%);
+    padding: 0 0 1rem 0 ;
+}
+section.container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.information div{
+    margin-bottom: 1rem;
+}
+.information div p{
+    display: inline;
+    margin-left: 1rem;
+}
+.about-us ul li,
+.contact-us ul li{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+/* End Footer */
