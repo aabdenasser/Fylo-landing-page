@@ -12,56 +12,58 @@
 </head>
 <body>
   <!-- Start Header  -->
-  <Header class="container">
-    <section class="header">
+  <Header>
+    <div class="container">
       <img src="images/logo.svg" alt="">
-      <ul>
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
-      </ul>
-    </section>
+      <nav>
+        <ul>
+          <li><a href="">Features</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
   </Header>
   <!-- End Header -->
 
-  <!-- Start Main -->
-  <main class="container">
   <!-- Start Row-one  -->
-    <section class="row-one">
+  <section class="row-one">
+    <div class="container">
       <div>
         <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p class="description-one">Fylo stores your most important files in one secure location. 
+        <p class="description">Fylo stores your most important files in one secure location. 
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.
         </p>
-        <form action="">
+        <form>
           <input type="email" required name="email" placeholder="Enter your email...">
           <input type="submit" value="Get Started">
         </form>
       </div>
-    </section>
-    <picture class="illustration-1">
+      <picture class="illustration-1">
         <img src="images/illustration-1.svg" alt="" class="illustration-1">
-    </picture>
-    <!--  End Row-one  -->
+      </picture>
+    </div>
+  </section>
+  <!--  End Row-one  -->
 
-    <!--  Start Row-Tow  -->
-    <section class="row-tow">
-      <div >
+  <!--  Start Row-Tow  -->
+  <section class="row-tow">
+    <div class="container">
+      <div>
         <h2>Stay productive, wherever you are</h2>
-        <p class="description-tow">Never let location be an issue when accessing your files. Fylo has you 
+        <p class="description">Never let location be an issue when accessing your files. Fylo has you 
           covered for all of your file storage needs.
         </p>
-        <p class="description-tow">Securely share files and folders with friends, family and colleagues for 
+        <p class="description">Securely share files and folders with friends, family and colleagues for 
           live collaboration. No email attachments required!
         </p>
         <div class="link">
-          <a href="#">See how Fylo works</a>
-          <img src="images/icon-arrow.svg" alt="">
+          <a href="#">See how Fylo works<img src="images/icon-arrow.svg" alt=""></a>
         </div>
         <div class="card">
-          <img src="images/icon-quotes.svg" alt="">
-          <p class="description-three">Fylo has improved our team productivity by an order of magnitude. Since 
+          <img src="images/icon-quotes.svg" alt="" class="quotes">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since 
             making the switch our team has become a well-oiled collaboration machine.
           </p>
           <div>
@@ -73,24 +75,23 @@
           </div>
         </div>
       </div>
-    </section>
-    <picture class="illustration-2">
-      <img src="images/illustration-2.svg" alt="" >
-    </picture>
-    <!--  End Row-Tow  -->
-  </main>
-  <!-- End Main -->
-  
-  <!--  Start Row-Three  -->
+      <picture class="illustration-2">
+        <img src="images/illustration-2.svg" alt="" class="illustration-2">
+      </picture>
+    </div>
   <section>
+  <!--  End Row-Tow  -->
+
+  <!--  Start Row-Three  -->
+  <section class="row-three">
     <div class="container">
       <div>
-        <h3>Get early access today</h3>
+        <h2>Get early access today</h2>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
           If you have any questions, our support team would be happy to help you.
         </p>
       </div>
-      <form action="">
+      <form >
         <input type="email" name="email" required placeholder="email@example.com">
         <input type="submit" value="Get Started For Free">
       </form>
@@ -101,35 +102,28 @@
   <!-- Start Footer -->
   <footer>
     <div class="container">
-        <img src="./images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="" > 
     </div>
     <section class="container">
       <div class="information">
-        <div>
-          <img src="./images/icon-phone.svg" alt="">
-          <p>Phone: +1-543-123-4567</p>
-        </div>
-        <div>
-          <img src="./images/icon-email.svg" alt="">
-          <p>example@fylo.com</p>
-        </div>
+        <p><img src="./images/icon-phone.svg" alt=""> Phone: +1-543-123-4567</p>
+        <p><img src="./images/icon-email.svg" alt=""> example@fylo.com </p>
       </div>
-      <div class="about-us">
+      <nav>
         <ul>
           <li>About Us</li>
           <li>Jobs</li>
           <li>Press</li>
           <li>Blog</li>
         </ul>
-      </div>
-      <div class="contact-us">
+      </nav>
+      <nav>
         <ul>
           <li>Contact Us</li>
           <li>Terms</li>
           <li>Privacy</li>
         </ul>
-      </div>
-    </div>
+      </nav>
     </section>
   </footer>
   <!-- End Footer -->
