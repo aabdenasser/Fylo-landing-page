@@ -79,6 +79,7 @@ body{
 /* Start Header */
 header{
     font-family: 'Raleway', sans-serif;
+    padding: 2rem 0;
 }
 header div.container{
     display: flex;
@@ -106,6 +107,7 @@ header div.container ul li a{
 .row-one  > div.container,
 .row-tow > div.container{
     display: flex;
+    padding: 2rem 0;
 }
 .row-one {
     margin-bottom: 5rem;
